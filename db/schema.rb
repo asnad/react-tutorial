@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170929070954) do
+ActiveRecord::Schema.define(version: 20171103064605) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "lifts", force: :cascade do |t|
+    t.date "date"
+    t.string "liftname"
+    t.boolean "ismetric", default: false
+    t.integer "weightlifted", default: 0
+    t.integer "repsperformed", default: 0
+    t.integer "onerm", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "messages", force: :cascade do |t|
     t.string "text"
