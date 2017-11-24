@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   		get :home
   	end
   end
-	resources :messages, only: [:index, :show]
+	resources :messages, only: [:index, :show, :create]
 end
