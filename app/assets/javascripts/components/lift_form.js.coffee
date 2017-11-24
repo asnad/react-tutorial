@@ -70,3 +70,4 @@
 					type: "submit"
 					disabled: !@valid()
 					'Create Lift'
+				React.createElement OneRmBox, onerm: @state.onerm
