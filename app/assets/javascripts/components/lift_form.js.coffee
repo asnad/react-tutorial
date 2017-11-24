@@ -26,42 +26,42 @@
 				React.DOM.input
 					className: 'form-control'
 					type: 'date'
-					paceholder: 'date'
+					placeholder: 'date'
 					name: 'date'
 					value: @state.date
 					onChange: @handleValueChange
 				React.DOM.input
 					className: 'form-control'
 					type: 'text'
-					paceholder: 'liftname'
+					placeholder: 'liftname'
 					name: 'liftname'
 					value: @state.liftname
 					onChange: @handleValueChange
 				React.DOM.input
 					className: 'form-control'
 					type: 'boolean'
-					paceholder: 'ismetric'
+					placeholder: 'ismetric'
 					name: 'ismetric'
 					value: @state.ismetric
 					onChange: @handleValueChange
 				React.DOM.input
 					className: 'form-control'
 					type: 'number'
-					paceholder: 'weightlifted'
+					placeholder: 'weightlifted'
 					name: 'weightlifted'
 					value: @state.weightlifted
 					onChange: @handleValueChange
 				React.DOM.input
 					className: 'form-control'
 					type: 'number'
-					paceholder: 'repsperformed'
+					placeholder: 'repsperformed'
 					name: 'repsperformed'
 					value: @state.repsperformed
 					onChange: @handleValueChange
 				React.DOM.input
 					className: 'form-control'
 					type: 'number'
-					paceholder: 'onerm'
+					placeholder: 'onerm'
 					name: 'onerm'
 					value: @state.onerm
 					onChange: @handleValueChange

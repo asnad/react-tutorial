@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'popper_js'
 gem "react-rails"
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.beta'

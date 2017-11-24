@@ -22,14 +22,14 @@
         React.DOM.input
           className: 'form-control'
           type: 'text'
-          paceholder: 'date'
+          placeholder: 'date'
           name: 'text'
           value: @state.text
           onChange: @handleValueChange
       React.DOM.input
         className: 'form-control'
         type: 'boolean'
-        paceholder: 'date'
+        placeholder: 'date'
         name: 'important'
         value: @state.important
         onChange: @handleValueChange
