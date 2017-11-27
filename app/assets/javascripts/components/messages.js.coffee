@@ -5,7 +5,7 @@
     messages: []
   addMessage: (message)->
     messages = @state.messages.slice()
-    messages.push message
+    messages.unshift message
     console.log messages
     @setState messages: messages
   render: ->
