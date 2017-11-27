@@ -5,7 +5,7 @@
 		lifts: []
 	addLift: (lift)->
 		lifts = @state.lifts.slice()
-		lifts.push lift
+		lifts.unshift lift
 		@setState lifts: lifts
 	render: ->
 		React.DOM.div
@@ -20,6 +20,7 @@
 					React.DOM.th null, "Date"
 					React.DOM.th null, "Lift Name"
 					React.DOM.th null, "Weight Lifted"
+					React.DOM.th null, "Metric ?"
 					React.DOM.th null, "Reps Performed"
 					React.DOM.th null, "Onerm"
 				React.DOM.tbody null,
