@@ -3,7 +3,7 @@
 		onerm: ''
 	render: ->
 		React.DOM.div
-			class: "card"
+			className: "card"
 			React.DOM.div
 				className: 'card-block'
 				React.DOM.h2
