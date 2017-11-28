@@ -4,9 +4,9 @@ coefficents = {1: 1, 2: .943, 3: .906, 4: .881, 5: .851, 6: .831, 7: .807, 8: .7
 		date: ''
 		liftname: ''
 		ismetric: false
-		weightlifted: ''
-		repsperformed: ''
-		onerm: ''
+		weightlifted: 0
+		repsperformed: 1
+		onerm: 0
 	calculatedOneRm: ->
 		if @state.weightlifted and @state.repsperformed
 			@state.onerm = @state.weightlifted/coefficents[@state.repsperformed]
