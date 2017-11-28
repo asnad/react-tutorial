@@ -8,6 +8,11 @@
     messages.unshift message
     console.log messages
     @setState messages: messages
+  handleDeleteMessage: (message) ->
+    messages = @state.messages.slice()
+    index = messages.indexOf message
+    messages.splice index, 1
+    @replaceState messages: messages
   render: ->
     React.DOM.div
       className: 'messages'
@@ -21,6 +26,7 @@
           React.DOM.th null, "Text"
           React.DOM.th null, "Is Important"
           React.DOM.th null, "DateTime"
+          React.DOM.th null, "Actions"
         React.DOM.tbody null,
           for message in @state.messages
-            React.createElement Message, key: message.id, message: message
+            React.createElement Message, key: message.id, message: message, handleDeleteMessage: @handleDeleteMessage

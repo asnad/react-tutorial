@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set_message, only: :show
+  before_action :set_message, only: [:show, :destroy]
   def index
   	@messages = Message.all
   end
@@ -12,10 +12,15 @@ class MessagesController < ApplicationController
       render json: {status: "fail", errors: message.errors.full_messages}
     end
   end
+  def destroy
+    @message.destroy
+    head :no_content
+  end
   private
   def set_message
   	@message = Message.find params[:id]
   end
+
   def message_params
     params.require(:message).permit(:text, :important)
   end
